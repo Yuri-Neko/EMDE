@@ -1,0 +1,14 @@
+name : RE-EMDE
+
+on:
+    push:
+      branches: [ main ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+       - name: Bot Whatsapp KYO
+         run: |
+           git clone https://github.com/Yuri-Neko/RE-EMDE && sudo apt install ffmpeg imagemagick -y && cd RE-EMDE && npm install && npm start
